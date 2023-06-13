@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play-button</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <style>
+        body{
+            width: 100%;
+            background: lightseagreen;
+        }
+        .main 
+        {
+            height: 50px;
+            width: 50px;
+            background: lightgrey;
+            margin: 100px auto;
+            text-align: center;
+            border-radius: 50%;
+        }
+        .main .inner
+        {
+            height: 50px;
+            width: 50px;
+            background: lightgray;
+            opacity: 1;
+            transition: 1s;
+            border-radius: 50%;
+            animation:effect 1s linear infinite ;
+          
+        }
+        .fa-play{
+             transform: translate(2px, -34px);
+             color: white;
+        }
+        @keyframes effect 
+        {
+            0%{opacity: 1;transform: scale(1)}
+            100%{opacity: 0;transform: scale(1.4)}
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="inner"></div>
+        <i class="fa fa-play" aria-hidden="true"></i>
+    </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .a{
+            height: 130px;
+            width: 300px;
+            background: black;
+            color: aqua;
+            font-size: 100px;
+            text-align: center;
+            margin: 100px auto;
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+
+        }
+        .b{
+            height: 100%;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            position: absolute;
+            top: 100%;
+            right: 100%;
+            transition: 1s;
+
+        }
+        .c{
+            height: 100%;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            position: absolute;
+            top: 100%;
+            right: -100%;
+            transition: 1s;
+
+
+        }
+        .d{
+            height: 100%;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            position: absolute;
+            top: -100%;
+            right: -100%;
+            transition: 1s;
+
+
+        }
+        .e{
+            height: 100%;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            position: absolute;
+            top: -100%;
+            right: 100%;
+            transition: 1s;
+
+
+        }
+        .a:hover .b{
+            top: 50%;
+            right:50%;
+        }
+        .a:hover .c{
+            top: 50%;
+            right:-50%;
+        }
+        .a:hover .d{
+            top: -50%;
+            right:-50%;
+        }
+        .a:hover .e{
+            top: -50%;
+            right:50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="a">Hello
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="e"></div>
+    </div>
+</body>
+</html>
